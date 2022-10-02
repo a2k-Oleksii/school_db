@@ -49,7 +49,7 @@ DROP TABLE IF EXISTS `lessons`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `lessons` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` char(255) DEFAULT NULL,
+  `name` char(255) NOT NULL,
   `teacher_id` int NOT NULL,
   `room_id` int NOT NULL,
   PRIMARY KEY (`id`)
